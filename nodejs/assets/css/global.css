@@ -1,0 +1,23 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    /*considera a borda como tamaho total para não dar BO*/
+}
+
+.content {
+    padding: 1rem;
+    background-color: #fff;
+    height: 100vh;
+    width: 100vw;
+}
+
+.content h1 {
+    margin: 0;
+}
+
+@media screen and (min-width: 992px) {
+    .content {
+         max-width: 992px;
+         margin: 0 auto;
+    }
+}

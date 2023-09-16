@@ -5,7 +5,7 @@ let array2 = ['string', 1, true, ['array3']];
 console.log(array2[1]); //acessar o indice de um array
 
 //manipulando arrays
-array.forEach(function(item, index){console.log(item, index)});/*é uma função e recebe uma fnção como parametro a qual recebe uma instrução */
+array.forEach(function (item, index) { console.log(item, index) });/*é uma função e recebe uma fnção como parametro a qual recebe uma instrução */
 //faz uma repetição para cada item ou indice dentro de um array
 array.push('novo item');/*add um novo item no final do array */
 console.log(array);
@@ -30,7 +30,7 @@ console.log(novoArray);
 //objetos
 //manipulando 
 
-let object = { string: 'string', number: 1, boolean: true, objectInterno: { objectInterno: 'objectInterno'}}
+let object = { string: 'string', number: 1, boolean: true, objectInterno: { objectInterno: 'objectInterno' } }
 console.log(object.boolean); /*com esse . eu acesso alo especifico */
 
 //desestruturação do objeto
