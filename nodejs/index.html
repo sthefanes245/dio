@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedex</title>
 
@@ -24,62 +25,154 @@
     <section class="content">
         <h1>Pokedex</h1>
 
-        <ol class="pokemons">
-          
-            <li class="pokemon">
-                <span class="number">#001</span>
-                <span class="name">Bulbasaur</span>  
+        <ol id="pokemonList" class="pokemons">
 
-                <div class="detail">
-                    <ol class="types">
-                        <li class="type">grass</li>
-                        <li class="type">poison</li>
-                    </ol>
-                <img src="Bulbasaur.png" alt="Bulbasaur">
-            </div>
-            </li>
-            <!--
-            <li>
-                Ivysaur
-                <img src="Ivysaur.png" alt="Ivysaur">
-            </li>
-            <li>
-                Venusaur
-                <img src="Venusaur.png" alt="Venusaur">
-            </li>
-            <li>
-                Charmander
-                <img src="Charmander.png" alt="Charmander">
-            </li>
-            <li>
-                Charmeleon
-                <img src="Charmeleon.png" alt="Charmeleon">
-            </li>
-            <li>
-                Charizard
-                <img src="Charizard.png" alt="Charizard">
-            </li>
-            <li>
-                Squirtle
-                <img src="Squirtle.png" alt="Squirtle">
-            </li>
-            <li>
-                Wartortle
-                <img src="Wartortle.png" alt="Wartortle">
-            </li>
-            <li>
-                Blastoise
-                <img src="Blastoise.png" alt="Blastoise">
-            </li>
-            <li>
-                Pikachu
-                <img src="Pikachu.png" alt="Pikachu">
-            </li>
-            -->
+            <button class="pokemon grass">
+                <li class="pokemon">
+                    <span class="number">#001</span>
+                    <span class="name">Bulbasaur</span>
+
+                    <div class="detail">
+                        <ol class="types">
+                            <li class="type">Grass</li>
+                            <li class="type">Poison</li>
+                        </ol>
+                        <img src="img/Bulbasaur.png" alt="Bulbasaur">
+                    </div>
+                </li>
+            </button>
+
+            <button class="pokemon grass">
+                <li class="pokemon">
+                    <span class="number">#002</span>
+                    <span class="name">Ivysaur</span>
+
+                    <div class="detail">
+                        <ol class="types">
+                            <li class="type">Grass</li>
+                            <li class="type">Poison</li>
+                        </ol>
+                        <img src="img/Ivysaur.png" alt="Ivysaur">
+                    </div>
+                </li>
+            </button>
+
+            <button class="pokemon grass">
+                <li class="pokemon">
+                    <span class="number">#003</span>
+                    <span class="name">Venusaur</span>
+
+                    <div class="detail">
+                        <ol class="types">
+                            <li class="type">Grass</li>
+                            <li class="type">Poison</li>
+                        </ol>
+                        <img src="img/Venusaur.png" alt="Venusaur">
+                    </div>
+                </li>
+            </button>
+
+            <button class="pokemon fire">
+                <li class="pokemon">
+                    <span class="number">#004</span>
+                    <span class="name">Charmander</span>
+
+                    <div class="detail">
+                        <ol class="types">
+                            <li class="type">Fire</li>
+
+                        </ol>
+                        <img src="img/Charmander.png" alt="Charmander">
+                    </div>
+                </li>
+            </button>
+
+            <button class="pokemon fire">
+                <li class="pokemon">
+                    <span class="number">#005</span>
+                    <span class="name">Charmeleon</span>
+
+                    <div class="detail">
+                        <ol class="types">
+                            <li class="type">Fire</li>
+                        </ol>
+                        <img src="img/Charmeleon.png" alt="Charmeleon">
+                    </div>
+                </li>
+            </button>
+
+            <button class="pokemon fire">
+                <li class="pokemon">
+                    <span class="number">#006</span>
+                    <span class="name">Charizard</span>
+
+                    <div class="detail">
+                        <ol class="types">
+                            <li class="type">Fire</li>
+                            <li class="type">Flying</li>
+                        </ol>
+                        <img src="img/Charizard.png" alt="Charizard">
+                    </div>
+                </li>
+            </button>
+
+            <button class="pokemon water">
+                <li class="pokemon">
+                    <span class="number">#007</span>
+                    <span class="name">Squirtle</span>
+
+
+                    <div class="detail">
+                        <ol class="types">
+                            <li class="type">Water</li>
+
+                        </ol>
+                        <img src="img/Squirtle.png" alt="Squirtle">
+                    </div>
+                </li>
+            </button>
+
+            <button class="pokemon water">
+                <li class="pokemon">
+                    <span class="number">#008</span>
+                    <span class="name">Wartortle</span>
+
+
+                    <div class="detail">
+                        <ol class="types">
+                            <li class="type">Water</li>
+                        </ol>
+                        <img src="img/Wartortle.png" alt="Wartortle">
+                    </div>
+                </li>
+            </button>
+
+            <button class="pokemon water">
+                <li class="pokemon">
+                    <span class="number">#009</span>
+                    <span class="name">Blastoise</span>
+
+
+                    <div class="detail">
+                        <ol class="types">
+                            <li class="type">Water</li>
+                        </ol>
+                        <img src="img/Blastoise.png" alt="Blastoise">
+                    </div>
+                </li>
+            </button>
+
         </ol>
+        <div class="pagination">
+            <button id="loadMoreButton" type="button">
+                Load More
+            </button>
+        </div>
     </section>
 
     <!--nosso script-->
+    <script src="/assets/js/pokemon-model.js"></script>
+    <script src="/assets/js/poke-api.js"></script>
     <script src="/assets/js/main.js"></script>
 </body>
 
